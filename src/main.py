@@ -14,12 +14,17 @@ def main_menu():
     typer.echo(blue("[4] [D]") + "elete a person from the talent bank")
 
 
-@app.command()
-def start():
+@app.callback(invoke_without_command=True)
+def start(ctx: typer.Context):
     clear_screen()
     main_menu()
     option = typer.prompt("Select an option")
     typer.echo(option)
+
+
+@app.command()
+def add_talent(ctx: typer.Context):
+    
 
 
 if __name__ == "__main__":
