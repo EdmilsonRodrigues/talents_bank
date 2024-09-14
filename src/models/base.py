@@ -1,4 +1,11 @@
-from models.annotations import id_annotation, name_annotation, email_annotation, linkedIn_annotation, programming_languages_annotation, frameworks_annotation
+from models.annotations import (
+    id_annotation,
+    name_annotation,
+    email_annotation,
+    linkedIn_annotation,
+    programming_languages_annotation,
+    frameworks_annotation,
+)
 from pydantic import BaseModel
 
 

@@ -19,7 +19,11 @@ def start(ctx: typer.Context):
     clear_screen()
     main_menu()
     option = typer.prompt("Select an option")
-    typer.echo(option)
+    match option:
+        case 1 | "A":
+            ...
+        case _:
+             ...
 
 
 @app.command()
